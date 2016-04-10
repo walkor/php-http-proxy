@@ -31,6 +31,7 @@ $worker->onMessage = function($connection, $buffer)
     list($method, $addr, $http_version) = explode(' ', $buffer);
     $url_data = parse_url($addr);
     $addr = !isset($url_data['port']) ? "{$url_data['host']}:80" : "{$url_data['host']}:{$url_data['port']}";
+    // Async TCP connection.
     $remote_connection = new AsyncTcpConnection("tcp://$addr");
     // CONNECT.
     if ($method !== 'CONNECT') {
