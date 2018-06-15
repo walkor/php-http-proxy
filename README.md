@@ -14,6 +14,10 @@ php start.php stop
 
 php start.php status
 
+## Connection statistics.
+
+php start.php connections
+
 ## Other links 
 https://github.com/walkor/shadowsocks-php  
 https://github.com/walkor/php-socks5
