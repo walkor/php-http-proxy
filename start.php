@@ -15,7 +15,7 @@ use \Workerman\Worker;
 use \Workerman\Connection\AsyncTcpConnection;
 
 // Autoload.
-require_once __DIR__ . '/Workerman/Autoloader.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 // Create a TCP worker.
 $worker = new Worker('tcp://0.0.0.0:8080');
