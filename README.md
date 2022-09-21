@@ -1,6 +1,8 @@
 # php-http-proxy
 HTTP proxy written in PHP based on workerman.
 
+## Install
+`git clone https://github.com/walkor/php-http-proxy && cd php-http-proxy && composer install`
 
 ## Start.
 
